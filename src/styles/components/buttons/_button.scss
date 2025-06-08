@@ -1,0 +1,84 @@
+@import '../../colors/colors';
+@import '../../mixins/button-mixin';
+
+.add-button {
+	@include button-size(70px, 70px);
+	@include button-border-style(8px, 2px, $orange-light);
+	background: url('/src/assets/icons/add_button.svg') center no-repeat;
+	@include button-bg-color($main-background-color, $hover-color);
+}
+
+.delete-button {
+	@include button-size(36px, 36px);
+	@include button-border-style(5px, 2px, $orange-dark);
+	background: url('/src/assets/icons/delete_button.svg') center no-repeat;
+	@include button-bg-color($main-background-color, $hover-color);
+}
+
+.task-buttons {
+	@include button-size(36px, 36px);
+	@include button-border-style(6px, 1px, $orange-dark);
+	@include button-bg-color($light-background-color, $hover-color);
+}
+
+.share-button {
+	@extend .task-buttons;
+	background: url('/src/assets/icons/share_button.svg') center no-repeat;
+	background-color: $light-background-color;
+}
+
+.info-button {
+	@extend .task-buttons;
+	background: url('/src/assets/icons/info_button.svg') center no-repeat;
+	background-color: $light-background-color;
+}
+
+.edit-button {
+	@extend .task-buttons;
+	background: url('/src/assets/icons/edit_button.svg') center no-repeat;
+	background-color: $light-background-color;
+}
+
+.text-buttons {
+	@include button-size(64px, 30px);
+	@include button-border-style(4px, 1px, $orange-dark);
+	@include button-bg-color($main-background-color, $hover-color);
+	color: $text-color;
+	font-size: 0.8em;
+}
+
+.share-buttons {
+	@include button-size(48px, 48px);
+	@include button-border-style(50%, 0px, $light-background-color);
+	@include button-bg-color($light-background-color, $hover-color);
+}
+
+.copy-button {
+	@extend .share-buttons;
+	background: url('/src/assets/icons/share_box/copy_button.svg') center no-repeat;
+	background-color: $light-background-color;
+}
+
+.vk-button {
+	@extend .share-buttons;
+	background: url('/src/assets/icons/share_box/vk_button.svg') center no-repeat;
+	background-color: $light-background-color;
+}
+
+.telegram-button {
+	@extend .share-buttons;
+	background: url('/src/assets/icons/share_box/telegram_button.svg') center no-repeat;
+	background-color: $light-background-color;
+}
+
+.whatsup-button {
+	@extend .share-buttons;
+	background: url('/src/assets/icons/share_box/whatsup_button.svg') center no-repeat;
+	background-color: $light-background-color;
+}
+
+.facebook-button {
+	@extend .share-buttons;
+	background: url('/src/assets/icons/share_box/facebook_button.svg') center no-repeat;
+	background-color: $light-background-color;
+}
