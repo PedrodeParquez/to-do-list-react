@@ -1,0 +1,387 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
+.add-button {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  border: 2px;
+  border-style: solid;
+  border-color: #ff8303;
+  border-radius: 8px;
+  background: url("/src/assets/icons/add_button.svg") center no-repeat;
+  background-color: #1b1a17;
+}
+.add-button:hover {
+  background-color: #2b2a27;
+}
+
+.delete-button {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  border: 2px;
+  border-style: solid;
+  border-color: #a35709;
+  border-radius: 5px;
+  background: url("/src/assets/icons/delete_button.svg") center no-repeat;
+  background-color: #1b1a17;
+}
+.delete-button:hover {
+  background-color: #2b2a27;
+}
+
+.task-buttons, .edit-button, .info-button, .share-button {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  border: 1px;
+  border-style: solid;
+  border-color: #a35709;
+  border-radius: 6px;
+  background-color: #242320;
+}
+.task-buttons:hover, .edit-button:hover, .info-button:hover, .share-button:hover {
+  background-color: #2b2a27;
+}
+
+.share-button {
+  background: url("/src/assets/icons/share_button.svg") center no-repeat;
+  background-color: #242320;
+}
+
+.info-button {
+  background: url("/src/assets/icons/info_button.svg") center no-repeat;
+  background-color: #242320;
+}
+
+.edit-button {
+  background: url("/src/assets/icons/edit_button.svg") center no-repeat;
+  background-color: #242320;
+}
+
+.text-buttons {
+  width: 64px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  border: 1px;
+  border-style: solid;
+  border-color: #a35709;
+  border-radius: 4px;
+  background-color: #1b1a17;
+  color: #f0e3ca;
+  font-size: 0.8em;
+}
+.text-buttons:hover {
+  background-color: #2b2a27;
+}
+
+.share-buttons, .facebook-button, .whatsup-button, .telegram-button, .vk-button, .copy-button {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  border: 0px;
+  border-style: solid;
+  border-color: #242320;
+  border-radius: 50%;
+  background-color: #242320;
+}
+.share-buttons:hover, .facebook-button:hover, .whatsup-button:hover, .telegram-button:hover, .vk-button:hover, .copy-button:hover {
+  background-color: #2b2a27;
+}
+
+.copy-button {
+  background: url("/src/assets/icons/share_box/copy_button.svg") center no-repeat;
+  background-color: #242320;
+}
+
+.vk-button {
+  background: url("/src/assets/icons/share_box/vk_button.svg") center no-repeat;
+  background-color: #242320;
+}
+
+.telegram-button {
+  background: url("/src/assets/icons/share_box/telegram_button.svg") center no-repeat;
+  background-color: #242320;
+}
+
+.whatsup-button {
+  background: url("/src/assets/icons/share_box/whatsup_button.svg") center no-repeat;
+  background-color: #242320;
+}
+
+.facebook-button {
+  background: url("/src/assets/icons/share_box/facebook_button.svg") center no-repeat;
+  background-color: #242320;
+}
+
+.input-task {
+  height: 32px;
+  padding-left: 10px;
+  border-radius: 4px;
+  border: 1px solid #ff8303;
+  background-color: #242320;
+  font-weight: bold;
+  font-size: 14px;
+}
+.input-task:focus {
+  outline: none;
+  background-color: #2b2a27;
+}
+
+.error-value {
+  border-color: #f22f2f;
+}
+
+.form-task-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 300px;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+.form-task-container .input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 70px;
+  gap: 10px;
+}
+
+.list-task-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 16px;
+}
+.list-task-container .task-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+.list-task-container .task-container .task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  background-color: #242320;
+  border: 2px;
+  border-style: solid;
+  border-color: #a35709;
+  border-radius: 8px;
+}
+.list-task-container .task-container .task .task-text {
+  max-width: 80%;
+  background-color: #242320;
+}
+.list-task-container .task-container .task .task-text .task-title {
+  font-size: 20px;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+.list-task-container .task-container .task .task-text .task-description {
+  font-size: 14px;
+}
+.list-task-container .task-container .task .task-text .task-title,
+.list-task-container .task-container .task .task-text .task-description {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background-color: #242320;
+}
+.list-task-container .task-container .task .task-text .task-title-extend,
+.list-task-container .task-container .task .task-text .task-description-extend {
+  white-space: normal;
+  overflow: visible;
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+          hyphens: auto;
+}
+.list-task-container .task-buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+  min-width: 300px;
+  gap: 10px;
+}
+.list-task-container .no-tasks {
+  margin-top: 30px;
+}
+.list-task-container .no-tasks h1 {
+  color: #ff8303;
+  font-weight: 400;
+}
+
+.edit-modal {
+  margin: auto auto;
+  margin-bottom: 0;
+  border-style: none;
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  height: 460px;
+  outline: none;
+}
+.edit-modal .edit-modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-style: none;
+  border-radius: 20px 20px 0 0;
+  z-index: 10;
+  gap: 20px;
+}
+.edit-modal .edit-modal-content .input-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  gap: 20px;
+}
+.edit-modal .edit-modal-content .input-container .input-description {
+  height: 300px;
+  padding-top: 1%;
+  resize: none;
+}
+.edit-modal .edit-modal-content .edit-modal-buttons-container {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  gap: 20px;
+}
+
+.modal-window {
+  margin: auto auto;
+  border-radius: 0px 0px 10px 10px;
+  border-style: none;
+  width: 100%;
+}
+.modal-window .modal-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 200px;
+  background-color: #242320;
+  z-index: 10;
+}
+.modal-window .modal-content-container .modal-decoration {
+  height: 5px;
+  width: 100%;
+  background-color: #a35709;
+}
+.modal-window .modal-content-container .modal-text-container {
+  width: 100%;
+  text-align: center;
+}
+.modal-window .modal-content-container .modal-text-container .modal-text {
+  font-size: 20px;
+  background-color: #242320;
+}
+.modal-window .modal-content-container .modal-buttons-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+  width: 100%;
+  gap: 20px;
+  background-color: #242320;
+}
+.modal-window .modal-content-container .modal-buttons-container .button {
+  font-size: 45px;
+}
+.modal-window .modal-content-container .modal-buttons-container .re-bg {
+  border-color: #ff8303;
+}
+
+.share-modal {
+  margin: auto auto;
+  margin-bottom: 0;
+  border-style: none;
+  border-radius: 20px 20px 0 0;
+  outline: none;
+}
+.share-modal .share-modal-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 20%;
+  height: 60px;
+  gap: 16px;
+  padding: 10px;
+  z-index: 10;
+}
+
+.backdrop {
+  display: none;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(7, 7, 7, 0.7);
+}
+
+.backdrop-open {
+  display: block;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto";
+  color: #f0e3ca;
+  background-color: #1b1a17;
+}
+
+.fake-body {
+  display: flex;
+  margin: 20px 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+}
+
+::-webkit-scrollbar {
+  background-color: #242320;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2b2a27;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #1b1a17;
+}/*# sourceMappingURL=main.css.map */
